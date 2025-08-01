@@ -18,7 +18,6 @@ A utility for converting PDF files to PNG images and back, using shell scripts a
 
 ```bash
 chmod +x ./buildvm.sh
-docker build -t pdf-png-pdf .
 ```
 
 ### Usage
