@@ -10,6 +10,11 @@ fi
 apt update -y
 apt install -y imagemagick ghostscript poppler-utils mupdf-tools
 
+# Copy custom policy.xml if it exists in /home/app
+if [ -f /home/app/policy.xml ]; then
+  cp /home/app/policy.xml /etc/ImageMagick-6/policy.xml
+fi
+
 # Set working directory
 cd /home/app
 
